@@ -1,5 +1,3 @@
-// ThemeContext.tsx
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { isDarkModePreferred } from '../../utils/themeUtils';
 
