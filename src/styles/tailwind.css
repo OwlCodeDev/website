@@ -4,17 +4,20 @@
 
 /* Estilos gerais */
 body {
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Estilos para tema claro */
-  body:not(.dark) {
-    background-color: #ffffff;
-    color: #333333;
-  }
-  
-  /* Estilos para tema escuro */
-  body.dark {
-    background-color: #333333;
-    color: #ffffff;
-  }
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Estilos para tema claro */
+body:not(.dark) {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Estilos para tema escuro */
+body.dark {
+  background-color: #333333;
+  color: #ffffff;
+}

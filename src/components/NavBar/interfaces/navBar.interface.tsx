@@ -1,3 +1,4 @@
 export interface INavBar {
-    title: string
+  title: string;
+  sticky?: boolean;
 }

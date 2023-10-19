@@ -14,7 +14,7 @@ function NavBarDropDownComponent() {
           <a>Homepage</a>
         </li>
         <li>
-          <a>Portfolio</a>
+          <a href="#parte2">Portfolio</a>
         </li>
         <li>
           <a>About</a>

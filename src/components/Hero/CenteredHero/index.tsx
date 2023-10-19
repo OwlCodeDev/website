@@ -1,8 +1,9 @@
+import { useTheme } from "../../../contexts/theme/theme.context";
 import { IHeroCentered } from "./interfaces/IHeroCentered.interface";
 
 function HeroCenteredComponent(props: IHeroCentered) {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero bg-base-200" style={{minHeight: '99vh'}}>
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">{props.title}</h1>
