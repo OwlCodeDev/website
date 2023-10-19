@@ -10,14 +10,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* Estilos para tema claro */
-body:not(.dark) {
-  background-color: #ffffff;
-  color: #333333;
-}
-
-/* Estilos para tema escuro */
-body.dark {
-  background-color: #333333;
-  color: #ffffff;
-}
