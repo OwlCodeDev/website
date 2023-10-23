@@ -57,7 +57,7 @@ function App() {
                   <li>Frontend: ReactJS, TailwindCSS</li>
                   <li>Backend: NodeJS and Python</li>
                   <li>Database: NoSQL, SQL, Cache</li>
-                  <li>Estructure: Microservices</li>
+                  <li>Structure: Microservices</li>
                   <li>Applications: React-native, Flutter</li>
                 </ul>
               </div>
