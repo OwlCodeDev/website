@@ -1,13 +1,18 @@
 # OwlCode
+
 Website of the OwlCode
 
+## Tasks
+
 ### Todo
+
 - [ ] Contact form  
 - [ ] Multi-lang  
 
 ***
 
 ### In progress
+
 - [ ] Site base  
   - [ ] Header  
   - [ ] Body  
@@ -20,4 +25,5 @@ Website of the OwlCode
 ***
 
 ### Done ✓
+
 - [x] Base project  

@@ -34,7 +34,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-200">
+          <div className="hero min-h-screen bg-secondary">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <img src="https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
               <div>
