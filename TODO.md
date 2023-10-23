@@ -2,10 +2,6 @@
 Website of the OwlCode
 
 ### Todo
-- [ ] Basic content  
-  - [ ] Small introduction  
-  - [ ] About us  
-  - [ ] Our technologies  
 - [ ] Contact form  
 - [ ] Multi-lang  
 
@@ -16,6 +12,10 @@ Website of the OwlCode
   - [ ] Header  
   - [ ] Body  
   - [ ] Footer  
+- [ ] Basic content  
+  - [ ] Small introduction  
+  - [ ] About us  
+  - [ ] Our technologies  
 
 ***
 
