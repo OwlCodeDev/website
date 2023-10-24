@@ -2,6 +2,7 @@ import { ThemeProvider } from './contexts/theme/theme.context'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
 import OwlCodeLogoComponent from './components/OwlCodeLogo'
+import ContactComponent from './components/Contact';
 
 function App() {
   return (
@@ -99,24 +100,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-200" id="contact">
-            <div className="hero-content text-center">
-              <div className="max-w-md">
-                <input placeholder="Email" className="input input-bordered" />
-                <label className="label cursor-pointer">
-                  Accept terms of use
-                  <input type="checkbox" className="toggle" />
-                </label>
-                <label className="label cursor-pointer">
-                  Submit to newsletter
-                  <input type="checkbox" className="toggle" />
-                </label>
-                <button className="btn btn-neutral btn-wide">Save</button>
-              </div>
-            </div>
-          </div>
         </>
-
+        <ContactComponent />
         <footer className="footer footer-center p-4 bg-base-300 text-base-content">
           <aside>
             <p>Copyright © 2023 - All right reserved by <a href="https://owlcode.dev">OwlCode</a> Ltd</p>
