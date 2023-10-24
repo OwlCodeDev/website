@@ -42,32 +42,44 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-              <img src="https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
-              <div className="max-w-lg">
-                <h1 className="text-5xl font-bold" id="about">Who we are?</h1>
-                <ul className="py-6 list-disc list-inside">
-                  <li>A team of passionate professionals united by a shared vision of excellence</li>
-                  <li>Committed to delivering innovative, high-quality software solutions that exceed expectations</li>
-                  <li>A culture of continuous improvement, where we strive to deliver high-quality software in short, incremental cycles.</li>
-                  <li>A focus on automating the build, test, and deployment process to reduce cycle times and increase efficiency.</li>
-                </ul>
+          <div className="hero min-h-screen bg-base-200 bg-contain bg-no-repeat bg-right"
+              style={{backgroundImage: 'url(https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
+          >
+            <div
+              className="hero min-h-screen bg-gradient-to-b md:bg-gradient-to-r from-base-200 via-transparent to-base-200 backdrop-blur-3xl"
+            >
+              <div className="hero-content flex-col lg:flex-row-reverse">
+                <img src="https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
+                <div className="max-w-lg">
+                  <h1 className="text-5xl font-bold" id="about">Who we are?</h1>
+                  <ul className="py-6 list-disc list-inside">
+                    <li>A team of passionate professionals united by a shared vision of excellence</li>
+                    <li>Committed to delivering innovative, high-quality software solutions that exceed expectations</li>
+                    <li>A culture of continuous improvement, where we strive to deliver high-quality software in short, incremental cycles.</li>
+                    <li>A focus on automating the build, test, and deployment process to reduce cycle times and increase efficiency.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-100">
-            <div className="hero-content flex-col lg:flex-row">
-              <img src="https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
-              <div className="max-w-lg">
-                <h1 className="text-5xl font-bold" id="stack">Our Technical Stack:</h1>
-                <ul className="py-6 list-disc list-inside">
-                  <li>Frontend: ReactJS, TailwindCSS</li>
-                  <li>Backend: NodeJS and Python</li>
-                  <li>Database: NoSQL, SQL, Cache</li>
-                  <li>Structure: Microservices</li>
-                  <li>Applications: React-native, Flutter</li>
-                </ul>
+          <div className="hero min-h-screen bg-base-100 bg-contain bg-no-repeat bg-left"
+              style={{backgroundImage: 'url(https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
+          >
+            <div
+              className="hero min-h-screen bg-gradient-to-b md:bg-gradient-to-l from-base-200 via-transparent to-base-200 backdrop-blur-3xl"
+            >
+              <div className="hero-content flex-col lg:flex-row">
+                <img src="https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
+                <div className="max-w-lg">
+                  <h1 className="text-5xl font-bold" id="stack">Our Technical Stack:</h1>
+                  <ul className="py-6 list-disc list-inside">
+                    <li>Frontend: ReactJS, TailwindCSS</li>
+                    <li>Backend: NodeJS and Python</li>
+                    <li>Database: NoSQL, SQL, Cache</li>
+                    <li>Structure: Microservices</li>
+                    <li>Applications: React-native, Flutter</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
