@@ -54,7 +54,7 @@ function App() {
               <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src="https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1080&h=1920&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
                 <div className="max-w-lg">
-                  <h1 className="text-5xl font-bold">Who we are?</h1>
+                  <h1 className="text-5xl font-bold">Who are we?</h1>
                   <ul className="py-6 list-disc list-inside">
                     <li>A team of passionate professionals united by a shared vision of excellence</li>
                     <li>Committed to delivering innovative, high-quality software solutions that exceed expectations</li>
