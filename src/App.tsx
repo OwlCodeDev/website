@@ -1,6 +1,8 @@
 import { ThemeProvider } from './contexts/theme/theme.context'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
+import OwlCodeLogoComponent from './components/OwlCodeLogo'
+
 function App() {
   return (
     <>
@@ -27,7 +29,7 @@ function App() {
             <div className="hero-overlay dark:bg-base-100/70 backdrop-blur-sm"></div>
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-lg">
-                <img className="max-w-sm mx-auto" src="owlcode_less.png" alt="" />
+                <OwlCodeLogoComponent />
                 <h1 className="font-title text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1]">
                   <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/20">Igniting</span>
                   <span className="inline-grid">
