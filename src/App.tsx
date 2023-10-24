@@ -27,6 +27,7 @@ function App() {
             <div className="hero-overlay bg-opacity-80 backdrop-blur-sm"></div>
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-lg">
+                <img className="max-w-sm mx-auto" src="owlcode_less.png" alt="" />
                 <h1 className="font-title text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1]">
                   <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/20">Igniting</span>
                   <span className="inline-grid">
