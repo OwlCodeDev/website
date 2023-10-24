@@ -41,5 +41,5 @@ html {
   left: -10%;
   width: 150%;
   height: 100%;
-  background: radial-gradient(ellipse at center, hsl(var(--b2) / 0.1) 40%, hsl(var(--b2) / 0.5) 50%, hsl(var(--b2) / 1) 60%);
+  background: radial-gradient(closest-side at center, hsl(var(--b2) / 0.1) 40%, hsl(var(--b2) / 0.5) 75%, hsl(var(--b2) / 1) 80%);
 }
