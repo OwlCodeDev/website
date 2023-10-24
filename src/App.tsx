@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <ThemeProvider>
-        <div className="navbar sticky top-0 z-30 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10">
+        <div className="navbar fixed top-0 z-30 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10">
           <div className="flex-1">
             <a className="btn btn-ghost normal-case text-xl">OwlCode</a>
           </div>
