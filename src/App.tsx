@@ -24,9 +24,17 @@ function App() {
           >
             <div className="hero-overlay bg-opacity-80 backdrop-blur-sm"></div>
             <div className="hero-content text-neutral-content">
-              <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold" id="intro">Hello there!</h1>
-                <p className="mb-5">
+              <div className="max-w-lg">
+                <h1 className="font-title text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left" id="intro">
+                  <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/20">Igniting</span>
+                  <span className="inline-grid">
+                    <span className="pointer-events-none col-start-1 row-start-1 bg-[linear-gradient(90deg,hsl(var(--s))_0%,hsl(var(--sf))_9%,hsl(var(--pf))_42%,hsl(var(--p))_47%,hsl(var(--a))_100%)] bg-clip-text opacity-70 blur-3xl [transform:translate3d(0,0,0)] [-webkit-text-fill-color:transparent] [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,hsl(var(--s))_4%,color-mix(in_oklch,hsl(var(--sf)),hsl(var(--pf)))_22%,hsl(var(--p))_45%,color-mix(in_oklch,hsl(var(--p)),hsl(var(--a)))_67%,hsl(var(--a))_100.2%)]" aria-hidden="true">the future</span>
+                    <span className="[&amp;::selection]:text-base-content relative col-start-1 row-start-1 bg-[linear-gradient(90deg,hsl(var(--s))_0%,hsl(var(--sf))_9%,hsl(var(--pf))_42%,hsl(var(--p))_47%,hsl(var(--a))_100%)] bg-clip-text [-webkit-text-fill-color:transparent] [&amp;::selection]:bg-blue-700/20 [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,hsl(var(--s))_4%,color-mix(in_oklch,hsl(var(--sf)),hsl(var(--pf)))_22%,hsl(var(--p))_45%,color-mix(in_oklch,hsl(var(--p)),hsl(var(--a)))_67%,hsl(var(--a))_100.2%)]">the future</span>
+                  </span>
+                  <br />
+                  <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/50">of technology</span>
+                </h1>
+                <p className="mb-5 py-4">
                   This is OwlCode, we are driven by our passion for innovation and quality. 
                   Our software solutions are crafted with meticulous attention to detail, 
                   and we approach every project with a relentless pursuit of excellence..
