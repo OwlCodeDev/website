@@ -31,7 +31,7 @@ function App() {
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-lg">
                 <OwlCodeLogoComponent />
-                <h1 className="font-title text-center text-5xl font-light leading-[1.1] font-code">
+                <h1 className="font-title text-center text-5xl font-black leading-[1.1] font-code">
                   <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/20">Igniting</span>
                   <span className="inline-grid">
                     <span className="pointer-events-none col-start-1 row-start-1 bg-[linear-gradient(90deg,hsl(var(--s))_0%,hsl(var(--sf))_9%,hsl(var(--pf))_42%,hsl(var(--p))_47%,hsl(var(--a))_100%)] bg-clip-text opacity-70 blur-3xl [transform:translate3d(0,0,0)] [-webkit-text-fill-color:transparent] [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,hsl(var(--s))_4%,color-mix(in_oklch,hsl(var(--sf)),hsl(var(--pf)))_22%,hsl(var(--p))_45%,color-mix(in_oklch,hsl(var(--p)),hsl(var(--a)))_67%,hsl(var(--a))_100.2%)]" aria-hidden="true">the future</span>
@@ -45,7 +45,7 @@ function App() {
                   Our software solutions are crafted with meticulous attention to detail, 
                   and we approach every project with a relentless pursuit of excellence.
                 </p>
-                <a className="btn btn-primary btn-outline btn-lg btn-wide glass" href="#contact">
+                <a className="btn btn-primary btn-outline btn-lg btn-wide" href="#contact">
                   <span className="flex items-center">
                     Contact us <EnvelopeIcon className="h-6 w-6 ml-4" />
                   </span>
