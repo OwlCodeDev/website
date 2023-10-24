@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <ThemeProvider>
-        <div className="navbar fixed top-0 z-30 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10">
+        <div className="navbar fixed top-0 z-30 bg-base-300/10 dark:bg-transparent">
           <div className="flex-1">
             <a className="btn btn-ghost normal-case text-xl">OwlCode</a>
           </div>
@@ -24,7 +24,7 @@ function App() {
             className="hero min-h-screen" id="intro"
             style={{backgroundImage: 'url(https://images.pexels.com/photos/3861967/pexels-photo-3861967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
           >
-            <div className="hero-overlay bg-opacity-80 backdrop-blur-sm"></div>
+            <div className="hero-overlay dark:bg-base-100/70 backdrop-blur-sm"></div>
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-lg">
                 <img className="max-w-sm mx-auto" src="owlcode_less.png" alt="" />
