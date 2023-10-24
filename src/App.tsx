@@ -27,7 +27,7 @@ function App() {
             className="hero min-h-screen" id="intro"
             style={{backgroundImage: 'url(https://images.pexels.com/photos/3861967/pexels-photo-3861967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
           >
-            <div className="hero-overlay dark:bg-base-100/70 backdrop-blur-sm"></div>
+            <div className="hero-overlay dark:bg-base-100/70 backdrop-blur-sm vignette"></div>
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-lg">
                 <OwlCodeLogoComponent />
@@ -45,7 +45,7 @@ function App() {
                   Our software solutions are crafted with meticulous attention to detail, 
                   and we approach every project with a relentless pursuit of excellence..
                 </p>
-                <a className="btn btn-neutral btn-lg btn-wide" href="#contact">
+                <a className="btn btn-primary btn-outline btn-lg btn-wide glass" href="#contact">
                   <span className="flex items-center">
                     Contact us <EnvelopeIcon className="h-6 w-6 ml-4" />
                   </span>
@@ -53,7 +53,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-200 bg-contain bg-repeat" id="about"
+          <div className="hero min-h-screen bg-base-200 bg-contain bg-repeat vignette-square" id="about"
               style={{
                 backgroundImage: 'url(https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
                 backgroundPosition: '80% 50%',
@@ -76,7 +76,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-100 bg-contain bg-repeat" id="stack"
+          <div className="hero min-h-screen bg-base-100 bg-contain bg-repeat vignette-square" id="stack"
               style={{
                 backgroundImage: 'url(https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
                 backgroundPosition: '20% 50%',
