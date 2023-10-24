@@ -42,14 +42,17 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-200 bg-contain bg-no-repeat bg-right"
-              style={{backgroundImage: 'url(https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
+          <div className="hero min-h-screen bg-base-200 bg-contain bg-repeat"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
+                backgroundPosition: '80% 50%',
+              }}
           >
             <div
-              className="hero min-h-screen bg-gradient-to-b md:bg-gradient-to-r from-base-200 via-transparent to-base-200 backdrop-blur-3xl"
+              className="hero min-h-screen bg-gradient-to-t md:bg-gradient-to-r from-base-200 from-30% via-transparent via-70% to-base-200 backdrop-blur-3xl"
             >
               <div className="hero-content flex-col lg:flex-row-reverse">
-                <img src="https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
+                <img src="https://images.pexels.com/photos/12899189/pexels-photo-12899189.jpeg?auto=compress&cs=tinysrgb&w=1080&h=1920&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
                 <div className="max-w-lg">
                   <h1 className="text-5xl font-bold" id="about">Who we are?</h1>
                   <ul className="py-6 list-disc list-inside">
@@ -62,14 +65,17 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero min-h-screen bg-base-100 bg-contain bg-no-repeat bg-left"
-              style={{backgroundImage: 'url(https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
+          <div className="hero min-h-screen bg-base-100 bg-contain bg-repeat"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
+                backgroundPosition: '20% 50%',
+              }}
           >
             <div
-              className="hero min-h-screen bg-gradient-to-b md:bg-gradient-to-l from-base-200 via-transparent to-base-200 backdrop-blur-3xl"
+              className="hero min-h-screen bg-gradient-to-t md:bg-gradient-to-l from-base-200 from-30% via-transparent to-base-200 backdrop-blur-3xl"
             >
               <div className="hero-content flex-col lg:flex-row">
-                <img src="https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
+                <img src="https://images.pexels.com/photos/18152964/pexels-photo-18152964/free-photo-of-woman-in-a-futuristic-room.jpeg?auto=compress&cs=tinysrgb&w=1080&h=1920&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
                 <div className="max-w-lg">
                   <h1 className="text-5xl font-bold" id="stack">Our Technical Stack:</h1>
                   <ul className="py-6 list-disc list-inside">
