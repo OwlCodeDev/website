@@ -1,4 +1,5 @@
-import { ThemeProvider } from "./contexts/theme/theme.context";
+import { ThemeProvider } from './contexts/theme/theme.context'
+import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
           </div>
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
-              <li><a href="#intro">Intro</a></li>
-              <li><a href="#about">About us</a></li>
-              <li><a href="#stack">Tech stack</a></li>
+              <li><a className="btn btn-sm btn-ghost" href="#intro">Intro</a></li>
+              <li><a className="btn btn-sm btn-ghost" href="#about">About us</a></li>
+              <li><a className="btn btn-sm btn-ghost" href="#stack">Tech stack</a></li>
+              <li><a className="btn btn-sm glass" href="#contact">Contact us</a></li>
             </ul>
           </div>
         </div>
@@ -23,9 +25,9 @@ function App() {
             style={{backgroundImage: 'url(https://images.pexels.com/photos/3861967/pexels-photo-3861967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}
           >
             <div className="hero-overlay bg-opacity-80 backdrop-blur-sm"></div>
-            <div className="hero-content text-neutral-content">
+            <div className="hero-content text-neutral-content text-center">
               <div className="max-w-lg">
-                <h1 className="font-title text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
+                <h1 className="font-title text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1]">
                   <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/20">Igniting</span>
                   <span className="inline-grid">
                     <span className="pointer-events-none col-start-1 row-start-1 bg-[linear-gradient(90deg,hsl(var(--s))_0%,hsl(var(--sf))_9%,hsl(var(--pf))_42%,hsl(var(--p))_47%,hsl(var(--a))_100%)] bg-clip-text opacity-70 blur-3xl [transform:translate3d(0,0,0)] [-webkit-text-fill-color:transparent] [@supports(color:oklch(0_0_0))]:bg-[linear-gradient(90deg,hsl(var(--s))_4%,color-mix(in_oklch,hsl(var(--sf)),hsl(var(--pf)))_22%,hsl(var(--p))_45%,color-mix(in_oklch,hsl(var(--p)),hsl(var(--a)))_67%,hsl(var(--a))_100.2%)]" aria-hidden="true">the future</span>
@@ -35,10 +37,15 @@ function App() {
                   <span className="[&::selection]:text-base-content brightness-150 contrast-150 [&::selection]:bg-blue-700/50">of technology</span>
                 </h1>
                 <p className="mb-5 py-4">
-                  This is OwlCode, we are driven by our passion for innovation and quality. 
+                  At OwlCode, we are driven by our passion for innovation and quality. 
                   Our software solutions are crafted with meticulous attention to detail, 
                   and we approach every project with a relentless pursuit of excellence..
                 </p>
+                <a className="btn btn-neutral btn-lg btn-wide" href="#contact">
+                  <span className="flex items-center">
+                    Contact us <EnvelopeIcon className="h-6 w-6 ml-4" />
+                  </span>
+                </a>
               </div>
             </div>
           </div>
@@ -86,6 +93,22 @@ function App() {
                     <li>Applications: React-native, Flutter</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="hero min-h-screen bg-base-200" id="contact">
+            <div className="hero-content text-center">
+              <div className="max-w-md">
+                <input placeholder="Email" className="input input-bordered" />
+                <label className="label cursor-pointer">
+                  Accept terms of use
+                  <input type="checkbox" className="toggle" />
+                </label>
+                <label className="label cursor-pointer">
+                  Submit to newsletter
+                  <input type="checkbox" className="toggle" />
+                </label>
+                <button className="btn btn-neutral btn-wide">Save</button>
               </div>
             </div>
           </div>
