@@ -9,7 +9,7 @@ function App() {
       <ThemeProvider>
         <div className="navbar sticky dark:fixed top-0 z-30 bg-base-300/50 dark:bg-transparent">
           <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl">OwlCode</a>
+            <a className="btn btn-ghost normal-case text-3xl">OwlCode</a>
           </div>
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
