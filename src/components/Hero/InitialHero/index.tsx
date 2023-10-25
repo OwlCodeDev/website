@@ -2,9 +2,16 @@ import TransitionWords from "../../TransitionWords";
 
 function InitialHero(): JSX.Element {
   return (
-    <div className="hero min-h-screen backdrop-blur-sm vignette">
-      <video src="src/assets/circuit.mp4" autoPlay loop></video>
-      <div className="hero-content flex-col max-w-xl">
+    <div
+      className="hero min-h-screen"
+      id="initialHero"
+      style={{
+        backgroundImage:
+          "url(https://images.pexels.com/photos/3861967/pexels-photo-3861967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+      }}
+    >
+      <div className="hero-overlay dark:bg-base-100/70 backdrop-blur-sm vignette"></div>w
+      <div className="hero-content flex-col max-full">
         <div className="space-y-2">
           <p className="text-sm font-bold">TECNOLOGIA & SERVIÇOS DIGITAIS</p>
           <h1 className="text-4xl font-bold">Somos especialistas em </h1>
