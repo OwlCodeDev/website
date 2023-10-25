@@ -1,30 +1,28 @@
-import { useEffect, useState } from "react";
-import { useTheme } from "../../contexts/theme/theme.context";
-import NavBarDropDownComponent from "./components";
-import { INavBar } from "./interfaces/navBar.interface";
+import OwlCodeLogoComponent from "../OwlCodeLogo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import "./style.css";
 
-function NavBarComponent(props: INavBar) {
-  const { darkMode } = useTheme();
-  const [sticky, setSticky] = useState<boolean>(props.sticky || false);
-  const themeClass = darkMode ? "theme-dark" : "theme-light";
-
-  useEffect(() => {
-    if (props.sticky !== undefined) {
-      setSticky(props.sticky);
-    }
-  }, [props.sticky]);
-  console.log("sticky", sticky);
+function NavBarComponent() {
   return (
-    <div
-      className={`navbar bg-primary text-primary-content ${
-        sticky ? "fixed" : ""
-      } z-50`}
-    >
-      <div className="navbar-start">
-        <NavBarDropDownComponent />
+    <div className="navbar z-10 absolute">
+      <div className="flex-1">
+        <a>
+          <OwlCodeLogoComponent height={100} />
+        </a>
       </div>
-      <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-xl">{props.title}</a>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a
+              className="underline-animation hover:before:bg-[linear-gradient(90deg,hsl(var(--s))_0%,hsl(var(--sf))_9%,hsl(var(--pf))_42%,hsl(var(--p))_47%,hsl(var(--a))_100%)] hover:bg-transparent"
+              href="https://wa.me/+5547997402365" target="_blank"
+            >
+              Fale conosco
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );
