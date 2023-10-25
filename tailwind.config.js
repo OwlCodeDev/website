@@ -1,34 +1,42 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "text-slide-5":
+          "text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
+      },
+      keyframes: {
+        "text-slide-5": {
+          "0%, 16%": {
+            transform: "translateY(0%)",
+          },
+          "20%, 36%": {
+            transform: "translateY(-16.66%)",
+          },
+          "40%, 56%": {
+            transform: "translateY(-33.33%)",
+          },
+          "60%, 76%": {
+            transform: "translateY(-50%)",
+          },
+          "80%, 96%": {
+            transform: "translateY(-66.66%)",
+          },
+          "100%": {
+            transform: "translateY(-83.33%)",
+          },
+        },
+      },
+    },
     fontFamily: {
-      code: ["Source\ Code\ Pro", "monospace"],
+      code: ["Source Code Pro", "monospace"],
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: [
-      "winter",
-      "synthwave",
-      {
-        base: {
-          primary: "#29b59b",
-          secondary: "#91a4d8",
-          accent: "#4674ba",
-          neutral: "#37293d",
-          "base-100": "#292b42",
-          info: "#8ac5ea",
-          success: "#1fb29e",
-          warning: "#c7740f",
-          error: "#f7263f",
-        },
-      },
-    ], // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: ["winter", "synthwave"], // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
     theme: "winter",
     darkTheme: "synthwave", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
