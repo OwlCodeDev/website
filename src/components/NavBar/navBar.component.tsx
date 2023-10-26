@@ -8,7 +8,7 @@ function NavBarComponent() {
     <div className="navbar z-10 absolute">
       <div className="flex-1">
         <a>
-          <OwlCodeLogoComponent height={100} />
+          <OwlCodeLogoComponent height={60} />
         </a>
       </div>
       <div className="flex-none">
