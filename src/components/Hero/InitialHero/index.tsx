@@ -31,9 +31,9 @@ function InitialHero(): JSX.Element {
               dos nossos clientes.
             </p>
           </div>
-          <button className="btn btn-outline border-primary float-left">
-            Quero saber mais sobre squad
-          </button>
+          <a className="btn btn-outline border-primary float-left rounded-full" href="#aboutUsHero">
+            Quero saber mais!
+          </a>
         </div>
       </div>
     </div>
