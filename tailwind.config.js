@@ -4,28 +4,25 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "text-slide-5":
-          "text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
+        "text-slide-4":
+          "text-slide-4 10s cubic-bezier(0.83, 0, 0.17, 1) infinite",
       },
       keyframes: {
-        "text-slide-5": {
-          "0%, 16%": {
+        "text-slide-4": {
+          "0%, 20%": {
             transform: "translateY(0%)",
           },
-          "20%, 36%": {
-            transform: "translateY(-16.66%)",
+          "25%, 45%": {
+            transform: "translateY(-20%)",
           },
-          "40%, 56%": {
-            transform: "translateY(-33.33%)",
+          "50%, 70%": {
+            transform: "translateY(-40%)",
           },
-          "60%, 76%": {
-            transform: "translateY(-50%)",
-          },
-          "80%, 96%": {
-            transform: "translateY(-66.66%)",
+          "75%, 95%": {
+            transform: "translateY(-60%)",
           },
           "100%": {
-            transform: "translateY(-83.33%)",
+            transform: "translateY(-80%)",
           },
         },
       },
