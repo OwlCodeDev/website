@@ -1,0 +1,31 @@
+#owl-background {
+    fill: #0000
+}
+  
+#owl-foreground {
+    @apply dark:fill-base-content fill-base-100
+}
+
+#owl-primary {
+    @apply fill-primary
+}
+
+#owl-primary-focus {
+    @apply fill-primary-focus
+}
+
+#owl-secondary {
+    @apply fill-secondary
+}
+
+#owl-secondary-focus {
+    @apply fill-secondary-focus
+}
+
+#owl-secondary-content {
+    @apply fill-secondary-content
+}
+
+#owl-secondary-content-2 {
+    @apply fill-secondary-content
+}

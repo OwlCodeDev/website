@@ -1,22 +1,45 @@
-/* src/tailwind.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Estilos gerais */
 body {
-    transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  .vignette {
+    position: relative;
+    overflow: hidden;
   }
-  
-  /* Estilos para tema claro */
-  body:not(.dark) {
-    background-color: #ffffff;
-    color: #333333;
+  .vignette::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    width: 120%;
+    height: 110%;
+    background: radial-gradient(ellipse at center, hsl(var(--b2) / 0.1) 30%, hsl(var(--b2) / 0.75) 60%, hsl(var(--b2) / 1) 75%);
   }
-  
-  /* Estilos para tema escuro */
-  body.dark {
-    background-color: #333333;
-    color: #ffffff;
-  }
+}
+
+
+.vignette-square {
+  position: relative;
+  overflow: hidden;
+}
+
+.vignette-square::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  width: 150%;
+  height: 100%;
+  background: radial-gradient(closest-side at center, hsl(var(--b2) / 0.1) 40%, hsl(var(--b2) / 0.5) 75%, hsl(var(--b2) / 1) 80%);
+}
