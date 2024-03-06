@@ -1,10 +1,16 @@
 import CircleStacks from "../../CircleStacks";
+import CircleStacksMobile from "../../CircleStacksMobile";
 
 function StacksHero() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
-        <CircleStacks />
+        <div className="md:display">
+          <CircleStacks />
+        </div>
+        <div className="md:hidden">
+          <CircleStacksMobile />
+        </div>
         <div>
           <h1 className="text-5xl font-bold">
             Estamos no core das principais

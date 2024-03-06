@@ -13,26 +13,29 @@ function AboutUsHero() {
           </div>
           <div className="card w-5/6 bg-base-200/50 backdrop-blur-3xl text-primary-content relative -top-20 ">
             <div className="card-body space-y-5">
-              <p className="text-2xl text-center dark:text-white">
-                Somos uma empresa de tecnologia que ajuda empresas a transformar
-                seus negócios através da nossa consultoria. <br />
-                Com uma equipe de especialistas utilizamos as melhores
-                tecnologias e metodologias para garantir a qualidade e
-                eficiência. <br />
-                Estamos comprometido com a satisfação do cliente e oferecemos
-                serviços personalizado para atender às necessidades específicas
-                de cada cliente.
+              <p className="md:text-2xl text-center dark:text-white">
+                Nossa empresa é especializada em desenvolvimento de soluções
+                tecnológicas sob medida para atender às necessidades específicas
+                de nossos clientes. <br />
+                Com uma equipe de especialistas em desenvolvimento de software,
+                utilizamos as mais avançadas tecnologias e metodologias para
+                garantir a qualidade e eficiência em cada projeto. <br />
+                Estamos comprometidos com a satisfação do cliente, oferecendo
+                serviços personalizados que abrangem desde consultoria inicial
+                até implementação e suporte contínuo. <br />
+                Se você busca uma parceria confiável para impulsionar a
+                transformação digital de sua empresa, estamos aqui para ajudar.
               </p>
             </div>
-            <div className="flex flex-row justify-around">
+            <div className="items-center flex flex-col md:flex md:flex-row md:justify-around">
               <div>
-                <div className="font-bold text-5xl text-primary">+200</div>
+                <div className="font-bold text-5xl text-primary">+100</div>
                 <div className="font-bold dark:text-white">
                   Projetos concluídos
                 </div>
               </div>
               <div>
-                <div className="font-bold text-5xl text-primary">+45</div>
+                <div className="font-bold text-5xl text-primary">+35</div>
                 <div className="font-bold dark:text-white">Clientes Ativos</div>
               </div>
               <div>
@@ -41,7 +44,9 @@ function AboutUsHero() {
               </div>
             </div>
             <div className="card-actions justify-center m-5">
-              <a className="btn btn-primary" href="#contact">Fale com nossos especialistas</a>
+              <a className="btn btn-primary" href="#contactHero">
+                Fale com nossos especialistas
+              </a>
             </div>
           </div>
         </div>
