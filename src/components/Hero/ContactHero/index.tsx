@@ -47,7 +47,7 @@ function ContactHero() {
       setError("Por favor, confirme que você não é um robô.");
     }
 
-    const response = await fetch("/api/enviar-email", {
+    const response = await fetch("https://contaqi.com.br/api/enviar-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -102,6 +102,7 @@ function ContactHero() {
           <div className="card w-5/6 bg-base-200/50 backdrop-blur-3xl text-primary-content relative -top-20 ">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <div className="text-center lg:text-left">
+                <h1 className="text-5xl font-bold dark:text-white">Estamos a sua espera</h1>
                 <p className="py-6 dark:text-white">
                   Nossa equipe dedicada está pronta para ouvir suas necessidades
                   e oferecer soluções sob medida para impulsionar o sucesso de

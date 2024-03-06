@@ -44,7 +44,7 @@ function AboutUsHero() {
               </div>
             </div>
             <div className="card-actions justify-center m-5">
-              <a className="btn btn-primary" href="#contact">
+              <a className="btn btn-primary" href="#contactHero">
                 Fale com nossos especialistas
               </a>
             </div>
