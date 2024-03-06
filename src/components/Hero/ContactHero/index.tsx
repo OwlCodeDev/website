@@ -34,6 +34,9 @@ function ContactHero() {
     e.preventDefault();
     setLoading(true);
 
+    console.log(formData);
+    
+
     if (
       !formData.firstName ||
       !formData.email ||
@@ -47,7 +50,7 @@ function ContactHero() {
       setError("Por favor, confirme que você não é um robô.");
     }
 
-    const response = await fetch("https://contaqi.com.br/api/enviar-email", {
+    const response = await fetch("https://contaqi.com.br/api/enviar-email-owlcode", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
