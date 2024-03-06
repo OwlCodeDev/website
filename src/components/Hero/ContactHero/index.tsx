@@ -35,14 +35,8 @@ function ContactHero() {
     setLoading(true);
 
     console.log(formData);
-    
 
-    if (
-      !formData.firstName ||
-      !formData.email ||
-      !formData.tel ||
-      !formData.activity
-    ) {
+    if (!formData.fullName || !formData.email || !formData.tel) {
       setError("Por favor, preencha todos os campos.");
     }
 
@@ -50,13 +44,16 @@ function ContactHero() {
       setError("Por favor, confirme que você não é um robô.");
     }
 
-    const response = await fetch("https://contaqi.com.br/api/enviar-email-owlcode", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const response = await fetch(
+      "https://contaqi.com.br/api/enviar-email-owlcode",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
     if (response.ok) {
       // toastSuccess("Email enviado com sucesso!");
@@ -105,7 +102,9 @@ function ContactHero() {
           <div className="card w-5/6 bg-base-200/50 backdrop-blur-3xl text-primary-content relative -top-20 ">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <div className="text-center lg:text-left">
-                <h1 className="text-5xl font-bold dark:text-white">Estamos a sua espera</h1>
+                <h1 className="text-5xl font-bold dark:text-white">
+                  Estamos a sua espera
+                </h1>
                 <p className="py-6 dark:text-white">
                   Nossa equipe dedicada está pronta para ouvir suas necessidades
                   e oferecer soluções sob medida para impulsionar o sucesso de
@@ -165,7 +164,7 @@ function ContactHero() {
                   </div>
                   <ReCaptcha
                     ref={recaptcha}
-                    sitekey={"6LcIL4opAAAAAAn3j0S0r0dLd_PotAgROyLrRZqs"}
+                    sitekey={"6LcEWY8pAAAAAFMRq2v8TPzRM1_0VqapAyTdREXK"}
                     onChange={handleCaptchaChange}
                   />
                   <div className="form-control mt-6">
