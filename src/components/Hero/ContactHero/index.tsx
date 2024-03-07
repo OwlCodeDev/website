@@ -109,10 +109,10 @@ function ContactHero() {
           <div className="card w-5/6 bg-base-200/50 backdrop-blur-3xl text-primary-content relative -top-20 ">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <div className="text-center lg:text-left">
-                <h1 className="text-5xl font-bold dark:text-white">
+                <h1 className="text-5xl font-bold text-white">
                   Estamos a sua espera
                 </h1>
-                <p className="py-6 dark:text-white">
+                <p className="py-6 text-white">
                   Nossa equipe dedicada está pronta para ouvir suas necessidades
                   e oferecer soluções sob medida para impulsionar o sucesso de
                   seu negócio. Seja para discutir um novo projeto, esclarecer
@@ -135,7 +135,7 @@ function ContactHero() {
                         setFormData({ ...formData, fullName: e.target.value });
                       }}
                       placeholder="Digite seu nome"
-                      className="input input-bordered dark:text-white"
+                      className="input input-bordered text-white"
                       required
                     />
                   </div>
@@ -151,7 +151,7 @@ function ContactHero() {
                         setFormData({ ...formData, email: e.target.value });
                       }}
                       placeholder="email"
-                      className="input input-bordered dark:text-white"
+                      className="input input-bordered text-white"
                       required
                     />
                   </div>
@@ -165,7 +165,7 @@ function ContactHero() {
                       value={formData.tel}
                       onChange={handleTelefoneChange}
                       placeholder="Telefone com DDD"
-                      className="input input-bordered dark:text-white"
+                      className="input input-bordered text-white"
                       required
                     />
                   </div>
