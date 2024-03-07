@@ -1,6 +1,6 @@
 import OwlCodeLogoComponent from "../OwlCodeLogo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
 function NavBarComponent() {
@@ -16,10 +16,10 @@ function NavBarComponent() {
           <li>
             <a
               className="underline-animation hover:before:bg-[linear-gradient(90deg,hsl(var(--s))_0%,hsl(var(--sf))_9%,hsl(var(--pf))_42%,hsl(var(--p))_47%,hsl(var(--a))_100%)] hover:bg-transparent"
-              href="https://wa.me/+5547997402365" target="_blank"
+              href="#contactHero"
             >
               Fale conosco
-              <FontAwesomeIcon icon={faWhatsapp} />
+              <FontAwesomeIcon icon={faComment} />
             </a>
           </li>
         </ul>

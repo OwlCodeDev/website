@@ -1,4 +1,5 @@
 import { ChangeEvent, RefObject, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import ReCaptcha, { ReCAPTCHA } from "react-google-recaptcha";
 
 const FORM_DEFAULT: {
@@ -18,6 +19,30 @@ function ContactHero() {
   const recaptcha: RefObject<ReCAPTCHA> = useRef(null);
   const [error, setError] = useState("");
 
+  const form = useRef<HTMLFormElement | null>(null);
+
+  console.log(form);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_d1z694d",
+        "template_n7n8fk2",
+        form.current ? form.current : "",
+        "ts8GDqa5SglWqr14t"
+      )
+      .then(
+        (result) => {
+          setError("Mensagem enviada");
+        },
+        (error) => {
+          setError("Erro ao enviar a mensagem!");
+        }
+      );
+  };
+
   const handleActivityChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setFormData({ ...formData, activity: event.target.value });
   };
@@ -34,8 +59,6 @@ function ContactHero() {
     e.preventDefault();
     setLoading(true);
 
-    console.log(formData);
-
     if (!formData.fullName || !formData.email || !formData.tel) {
       setError("Por favor, preencha todos os campos.");
     }
@@ -43,25 +66,9 @@ function ContactHero() {
     if (!formData.captchaToken) {
       setError("Por favor, confirme que você não é um robô.");
     }
-
-    const response = await fetch(
-      "https://contaqi.com.br/api/enviar-email-owlcode",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      }
-    );
-
-    if (response.ok) {
-      // toastSuccess("Email enviado com sucesso!");
-      resetForm();
-    } else {
-      // toastError("Erro ao enviar email");
-    }
+    sendEmail(e);
     setLoading(false);
+    resetForm();
   };
   const handleTelefoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formattedPhone = formatarTelefone(e.target.value);
@@ -115,7 +122,7 @@ function ContactHero() {
                 </p>
               </div>
               <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <form className="card-body" onSubmit={handleSubmit}>
+                <form ref={form} className="card-body" onSubmit={handleSubmit}>
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Nome Completo</span>
@@ -123,7 +130,7 @@ function ContactHero() {
                     <input
                       type="text"
                       name="nome"
-                      value={formData.nome}
+                      value={formData.fullName}
                       onChange={(e) => {
                         setFormData({ ...formData, fullName: e.target.value });
                       }}
@@ -162,16 +169,24 @@ function ContactHero() {
                       required
                     />
                   </div>
-                  <ReCaptcha
-                    ref={recaptcha}
-                    sitekey={"6LcEWY8pAAAAAFMRq2v8TPzRM1_0VqapAyTdREXK"}
-                    onChange={handleCaptchaChange}
-                  />
+                  <div>
+                    <ReCaptcha
+                      ref={recaptcha}
+                      size={window.screen.width < 512 ? "compact" : "normal"}
+                      sitekey={"6LcEWY8pAAAAAFMRq2v8TPzRM1_0VqapAyTdREXK"}
+                      onChange={handleCaptchaChange}
+                    />
+                  </div>
                   <div className="form-control mt-6">
-                    <button type="submit" className="btn btn-primary">
+                    <button
+                      type="submit"
+                      className="btn btn-primary"
+                      disabled={formData.captchaToken !== "" ? false : true}
+                    >
                       Enviar
                     </button>
                   </div>
+                  {error && <div className="text-white">{error}</div>}
                 </form>
               </div>
             </div>
