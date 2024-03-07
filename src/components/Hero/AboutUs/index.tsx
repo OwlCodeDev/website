@@ -13,7 +13,7 @@ function AboutUsHero() {
           </div>
           <div className="card w-5/6 bg-base-200/50 backdrop-blur-3xl text-primary-content relative -top-20 ">
             <div className="card-body space-y-5">
-              <p className="md:text-2xl text-center dark:text-white">
+              <p className="md:text-2xl text-center text-white">
                 Nossa empresa é especializada em desenvolvimento de soluções
                 tecnológicas sob medida para atender às necessidades específicas
                 de nossos clientes. <br />
@@ -30,17 +30,17 @@ function AboutUsHero() {
             <div className="items-center flex flex-col md:flex md:flex-row md:justify-around">
               <div>
                 <div className="font-bold text-5xl text-primary">+100</div>
-                <div className="font-bold dark:text-white">
+                <div className="font-bold text-white">
                   Projetos concluídos
                 </div>
               </div>
               <div>
                 <div className="font-bold text-5xl text-primary">+35</div>
-                <div className="font-bold dark:text-white">Clientes Ativos</div>
+                <div className="font-bold text-white">Clientes Ativos</div>
               </div>
               <div>
                 <div className="font-bold text-5xl text-primary">+10</div>
-                <div className="font-bold dark:text-white">Anos de atuação</div>
+                <div className="font-bold text-white">Anos de atuação</div>
               </div>
             </div>
             <div className="card-actions justify-center m-5">
